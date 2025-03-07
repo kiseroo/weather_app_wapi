@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fas fa-cloud-sun"></i> Weather Forecast</h1>
+        <div class="search-container">
+            <input type="text" id="city-input" placeholder="Enter city name (e.g., London,UK)">
+            <button id="search-btn"><i class="fas fa-search"></i> Search</button>
+        </div>
+        <div class="weather-info" id="weather-container">
+            <div class="weather-details" id="weather-details">
+                <!-- Weather details will be displayed here -->
+                <div class="initial-message">
+                    <i class="fas fa-cloud-sun-rain weather-icon-large"></i>
+                    <p>Enter a city name to get the weather forecast</p>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <p>Powered by <a href="https://openweathermap.org/" target="_blank">OpenWeather API</a></p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
